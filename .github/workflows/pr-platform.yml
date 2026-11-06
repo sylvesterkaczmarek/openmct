@@ -23,8 +23,7 @@ jobs:
           - macos-latest
           - windows-latest
         node_version:
-          - lts/iron
-          - lts/hydrogen
+          - '24.14.1'
         architecture:
           - x64
 
