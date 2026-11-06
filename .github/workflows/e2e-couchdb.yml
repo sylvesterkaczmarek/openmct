@@ -50,6 +50,7 @@ jobs:
         run: npm run cov:e2e:report
 
       - name: Publish Results to Codecov.io
+        if: ${{ github.repository == 'nasa/openmct' }}
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
